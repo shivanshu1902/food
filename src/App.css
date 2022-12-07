@@ -1,38 +1,225 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Balsamiq Sans";
+  
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: whitesmoke;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  width: 100%;
+  padding: 15px 220px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: white;
+}
+
+.right {
+  width: 7.5%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+}
+
+.header-content_logo {
+  min-width: fit-content;
+}
+.header-content_logo img {
+  width: 1.5rem;
+  margin-right: 0.4rem;
+}
+.header-content_logo > div {
+  display: flex;
+  align-items: center;
+}
+.header-content_logo > p {
+  font-size: 0.5rem;
+}
+.content-logo img {
+  width: 1.5rem;
+}
+/* .logo img {
+  width: 170px;
+  height: 32px;
+} */
+
+.card {
+  width: 600px;
+  /* height: 320px; */
+  /* background: rgb(228, 255, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(228, 255, 0, 1) 0%,
+    rgba(153, 217, 140, 1) 100%
+  ); */
+  box-shadow: -8px 9px 18px 0px rgba(117, 117, 117, 0.75);
+  padding: 10px 20px;
+  font-size: 30px;
+  border-radius: 10px;
+  margin:40px auto;
+  
+}
+.heart {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.heart:hover {
+  cursor: pointer;
+}
+.red{
+  color:rgb(238, 59, 59);
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.mealname {
+  letter-spacing: 0.8px;
+  font-weight: bold;
+}
+.middle {
+  display: flex;
+  justify-content: space-between;
+}
+.foodinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+}
+.category-area {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.area {
+  background-color: white;
+  color: #04425f;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  margin-right: 10px;
+  opacity: 0.4;
+}
+.card img {
+  height: 170px;
+  width: 170px;
+  border-radius: 6px;
+  border: solid 2px white;
+  box-shadow: -7px 7px 14px -8px rgba(255, 255, 255, 0.75);
+}
+/* price */
+.price{
+  margin-right: 15px;
+}
+.foodtag span {
+  text-align: center;
+  
+  /* display: flex;
+  justify-content: space-evenly; */
+  font-family: 'Satisfy', cursive;
+    font-size: 32px;
+  
+}
+
+/* .foodtag span {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+} */
+
+.bottom {
+  display: flex;
+  flex-flow: row-reverse;
+  margin-top: 5px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  width: 120px;
+  justify-content: space-between;
+  border: none;
+  border-radius: 4px;
+  background-color:white;
+  color: rgb(43, 43, 43);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color:orange;
+  color: white;
+}
+
+
+
+
+
+/* showmore button */
+.showbtn{
+  outline:none;
+  border:none;
+  background-color:white;
+  padding:15px;
+  font-size: 15px;
+  
+  margin: 15px auto; 
+  width:150px
+}
+.paymentcontainer{
+  height: 500px;
+  width: 500px;
+  padding: 30px;
+  position: relative;
+}
+.paymentHeading{
+  text-align: center;
+  margin: 10px 0;
+  border-bottom: 1px solid rgb(131, 71, 71);
+}
+.closebtn{
+  position: absolute;
+  right:5px;
+  top:10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.prices{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  position: relative;
+}
+
+ .paymentbtn{
+  outline: none;
+  border:none;
+  width:100%;
+  background-color: orange;
+  text-align: center !important;
+  
+  padding: 15px auto;
+  font-size: 17px;
+  border-radius: 7px;
+}
+.couponform{
+  position: absolute;
+  right:0;
+  top:30px;
+  z-index: 1;
+
 }
